@@ -1,0 +1,516 @@
+<html>
+    <head>
+        <title>IBRF: Instant Book Review Finder</title>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/audit.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css" />
+        <link rel="stylesheet" href="css/bootstrap.over-ride.css" type="text/css" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+    </head>
+    
+    <body>
+        <br/>
+        
+        <div class="container">
+            
+            <div id="audit-details"></div> <!-- audit details container -->
+            
+            <div class="row" id="audit-item-list">
+                
+                <div class="col-lg-12">
+                    
+                    
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <h3>Audit</h3>
+                        </div>
+                        <div class="col-lg-4" style="text-align:right">
+                            <form class="form-inline" style="margin:20px 0">
+                                <div class="form-group">
+                                    <label for="email"><i class="fa fa-filter"></i> Status</label>
+                                    <select class="form-control input-sm" style="width:250px">
+                                        <option>All</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>    
+                        
+                        <div class="col-lg-3" style="text-align:right">
+                            <ul class="pagination pagination-sm">
+                              <li><a href="#">Prev</a></li>
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li><a href="#">Next</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+                    
+                    <div class="panel panel-default">
+                        <table class="table table-hover table-striped" id="audit-list">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Business Name</th>
+                                <th>Account Number</th>
+                                <th>Telephone</th>
+                                <th>Address</th>
+                                <th>Customer Type</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            
+                            <tbody>
+                            <tr class="showDetails">
+                                <td class="not-bind-click"><a href="">1</a> <i class="fa fa-sticky-note"></i></td>
+                                <td>office Depot</td>
+                                <td>0001456</td>
+                                <td>561 699 4147</td>
+                                <td>22025 Spring Harbor Dr, Delray Beach</td>
+                                <td>Direct</td>
+                                <td>Purged</td>
+                            </tr>
+                            
+                             <tr class="showDetails">
+                                <td class="not-bind-click"><a href="">1</a> <i class="fa fa-sticky-note"></i></td>
+                                <td>office Depot</td>
+                                <td>0001456</td>
+                                <td>561 699 4147</td>
+                                <td>22025 Spring Harbor Dr, Delray Beach</td>
+                                <td>Direct</td>
+                                <td>Purged</td>
+                            </tr>
+                             <tr class="showDetails">
+                                <td class="not-bind-click"><a href="">1</a> <i class="fa fa-sticky-note"></i></td>
+                                <td>office Depot</td>
+                                <td>0001456</td>
+                                <td>561 699 4147</td>
+                                <td>22025 Spring Harbor Dr, Delray Beach</td>
+                                <td>Direct</td>
+                                <td>Purged</td>
+                            </tr>
+                            
+                             <tr class="showDetails">
+                                <td class="not-bind-click"><a href="">1</a> <i class="fa fa-sticky-note"></i></td>
+                                <td>office Depot</td>
+                                <td>0001456</td>
+                                <td>561 699 4147</td>
+                                <td>22025 Spring Harbor Dr, Delray Beach</td>
+                                <td>Direct</td>
+                                <td>Purged</td>
+                            </tr>
+                            
+                            <tr class="showDetails">
+                                <td class="not-bind-click"><a href="">1</a> <i class="fa fa-sticky-note"></i></td>
+                                <td>office Depot</td>
+                                <td>0001456</td>
+                                <td>561 699 4147</td>
+                                <td>22025 Spring Harbor Dr, Delray Beach</td>
+                                <td>Direct</td>
+                                <td>Purged</td>
+                            </tr>
+                            
+                            <tr class="showDetails">
+                                <td class="not-bind-click"><a href="">1</a> <i class="fa fa-sticky-note"></i></td>
+                                <td>office Depot</td>
+                                <td>0001456</td>
+                                <td>561 699 4147</td>
+                                <td>22025 Spring Harbor Dr, Delray Beach</td>
+                                <td>Direct</td>
+                                <td>Purged</td>
+                            </tr>
+                            
+                            <tr class="showDetails">
+                                <td class="not-bind-click"><a href="">1</a> <i class="fa fa-sticky-note"></i></td>
+                                <td>office Depot</td>
+                                <td>0001456</td>
+                                <td>561 699 4147</td>
+                                <td>22025 Spring Harbor Dr, Delray Beach</td>
+                                <td>Direct</td>
+                                <td>Purged</td>
+                            </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>    
+                    
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <button class="btn btn-primary btn-sm">
+                                <i class="fa fa-comment"></i> Add Comment
+                            </button>
+                        </div>
+                        <div class="col-lg-8" style="text-align:right">
+                            <ul class="pagination pagination-sm" style="margin:0">
+                              <li><a href="#">Prev</a></li>
+                              <li><a href="#">1</a></li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#">4</a></li>
+                              <li><a href="#">5</a></li>
+                              <li><a href="#">Next</a></li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!--Comments message form -->
+            <div class="row">
+                <br/>
+                <h4>
+                    Customer Information
+                    <span style="float:right; margin:0px;"><button class="btn btn-primary btn-sm" id="backToAudit"><i class="fa fa-backward"></i> Back to Audit</button></span>
+                </h4>
+                <hr/>
+                <div class="col-lg-6">
+                    
+                    <div class="col-lg-4">Order Number</div>
+                    <div class="col-lg-8"><code>5623658996</code></div>
+                    
+                    <div class="col-lg-4">Message</div>
+                    <div class="col-lg-8">This is a test message</div>
+                    
+                    <div class="col-lg-4">Date</div>
+                    <div class="col-lg-8">29th Jan, 2015</div>
+                    
+                    <div class="col-lg-4">Status</div>
+                    <div class="col-lg-8">Active</div>
+                    
+                    <div class="col-lg-4">Delivery Info</div>
+                    <div class="col-lg-8">Wait for response</div>
+                    
+                    <div class="col-lg-4">Ship To</div>
+                    <div class="col-lg-8">
+                        
+                         <address>
+                          <strong>Twitter, Inc.</strong><br>
+                          1355 Market Street, Suite 900<br>
+                          San Francisco, CA 94103<br>
+                          <abbr title="Phone">P:</abbr> (123) 456-7890
+                        </address>
+                    
+                    </div>
+                    
+                   
+                </div>    
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Add your Comments</label>
+                            <textarea class="form-control" rows="3" placeholder="write your comments"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success btn-sm"><i class="fa fa-check"></i> Submit</button>
+                    </form>
+                </div>    
+            </div>
+            
+            
+            <!-- Some buttons --> 
+            <div class="row">
+                <h4>Gmil Buttons</h4>
+                <hr/>
+                <div class="col-lg-12">
+                    <button class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                    <button class="btn btn-primary"><i class="fa fa-plus"></i> Add Customer</button>
+                    <button class="btn btn-primary"><i class="fa fa-comment"></i> Add Comments</button>
+                    <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Login</button>
+                    <button class="btn btn-danger"><i class="fa fa-remove"></i> Cancel</button>
+                    <button class="btn btn-success"><i class="fa fa-check"></i> Submit</button>
+                </div>
+                <div class="col-lg-12">&nbsp;</div>
+                <div class="col-lg-12">
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-search"></i> Search</button>
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-plus"></i> Add Customer</button>
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-comment"></i> Add Comments</button>
+                    <button class="btn btn-primary btn-sm"><i class="fa fa-sign-in"></i> Login</button>
+                    <button class="btn btn-danger btn-sm"><i class="fa fa-remove"></i> Cancel</button>
+                    <button class="btn btn-success btn-sm"><i class="fa fa-check"></i> Submit</button>
+                </div>
+                
+                <div class="col-lg-12">&nbsp;</div>
+                <div class="col-lg-12">
+                    <button class="btn btn-primary btn-xs"><i class="fa fa-pencil"></i> Edit</button>
+                    <button class="btn btn-danger btn-xs"><i class="fa fa-close"></i> remove</button>
+                    <button class="btn btn-primary btn-xs"><i class="fa fa-comment"></i> Add Comments</button>
+                    <button class="btn btn-primary btn-xs"><i class="fa fa-sign-in"></i> Login</button>
+                    <button class="btn btn-danger btn-xs"><i class="fa fa-remove"></i> Cancel</button>
+                    <button class="btn btn-success btn-xs"><i class="fa fa-check"></i> Submit</button>
+                </div>
+                
+            </div>
+            
+            <!--end of buttons -->
+            <br/><br/><br/><br/><br/>
+            <!-- search -->
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Search for customer</h3>
+                        </div>
+                        
+                        <div class="panel-body">
+                            <div class="form">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>First name</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>Last name</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>Buesiness Name</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>Zip Code</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label>Others</label>
+                                        <input type="text" class="form-control" placeholder="enter first name"/> 
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button class="btn btn-primary"><i class="fa fa-search"></i> Search</button>
+                                    <button class="btn btn-default"><i class="fa fa-times-circle-o"></i> Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- search results -->
+                        <br/>  
+                        <br/>
+                        <div class="row">
+                            <div class="col-lg-12" style="padding:0px 45px">
+                                <div>
+                                    <h4 style="float:left;">Total 10 results found</h4>
+                                    <ul class="pagination pagination-sm" style="float:right;  margin-top:0px;">
+                                          <li><a href="#">Prev</a></li>
+                                          <li><a href="#">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#">4</a></li>
+                                          <li><a href="#">5</a></li>
+                                          <li><a href="#">Next</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <table class="table table-hover table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Address</th>
+                                            <th>status</th>
+                                            <th class="text-center"  width="13%">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>226561</td>
+                                            <td>Masud</td>
+                                            <td>Hasan</td>
+                                            <td>2205 Spring Harbor Dr</td>
+                                            <td>Active</td>
+                                            <td class="text-right">
+                                                <button class="btn btn-xs btn-default"><i class="fa fa-pencil"></i> Edit</button>
+                                                <button class="btn btn-xs btn-danger"><i class="fa fa-remove"></i> Delete</button>
+                                            </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                            <td>226561</td>
+                                            <td>Masud</td>
+                                            <td>Hasan</td>
+                                            <td>2205 Spring Harbor Dr</td>
+                                            <td>Active</td>
+                                            <td class="text-right">
+                                                <button class="btn btn-xs btn-default"><i class="fa fa-pencil"></i> Edit</button>
+                                                <button class="btn btn-xs btn-danger"><i class="fa fa-remove"></i> Delete</button>
+                                            </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                            <td>226561</td>
+                                            <td>Masud</td>
+                                            <td>Hasan</td>
+                                            <td>2205 Spring Harbor Dr</td>
+                                            <td>Active</td>
+                                            <td class="text-right">
+                                                <button class="btn btn-xs btn-default"><i class="fa fa-pencil"></i> Edit</button>
+                                                <button class="btn btn-xs btn-danger"><i class="fa fa-remove"></i> Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul class="pagination pagination-sm" style="float:right; margin-top:5px;">
+                                      <li><a href="#">Prev</a></li>
+                                      <li><a href="#">1</a></li>
+                                      <li><a href="#">2</a></li>
+                                      <li><a href="#">3</a></li>
+                                      <li><a href="#">4</a></li>
+                                      <li><a href="#">5</a></li>
+                                      <li><a href="#">Next</a></li>
+                                </ul>
+                            </div>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <br/><br/><br/><br/>
+            <!-- Lookup customer screen -->
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h1 class="panel-title">Identify the Customer</h1>
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label>Enter one of the following <code>Customer Id#</code>, <code>order#</code>, <code>Telephone#</code> <code>SPC#</code>, <code>Service Request#</code>, <code>Business Name</code>, <code>Email</code> OR <code>Prospect#</code></label>
+                                <input type="text" class="form-control input-lg">
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="checkbox">
+                                    <label>
+                                      <input type="checkbox"> Search by <strong>Member number</strong>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 text-right">
+                                <button class="btn btn-primary btn-lg" type="submit"><i class="fa fa-search"></i> Search</button>
+                            </div>
+                            
+                            <div class="col-lg-12 text-center">
+                                <hr/>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-cart-plus"></i> Place Order</button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-info-circle"></i> Product Info</button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-ship"></i> Service</button>
+                                <button class="btn btn-primary" type="button"><i class="fa fa-list"></i> Prospect</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+        <!-- Template for -->
+        <script type="html/template" id="popoverContent">
+            <div class="row">
+                <div class="col-lg-12">
+                    <table class="table table-table-striped">
+                        <thead>
+                            <tr>
+                                <th>Author</th>
+                                <th>Details</th>
+                                <th>Date</th>
+                                <th>status</th>
+                                <th>Comment By</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </script>
+        
+        
+        <script type="html/template" id="auditDetailsContent">
+            
+        <div class="row">
+                <div class="col-lg-12">
+                    <h3>
+                        Audit Details
+                        <span style="float:right; margin:0px;"><button class="btn btn-primary btn-sm" id="backToAudit"><i class="fa fa-backward"></i> Back to Audit</button></span>
+                    </h3>
+                    
+                    <div class="panel panel-default">
+                        <table class="table table-hover table-striped" id="audit-list">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Business Name</th>
+                                <th>Account Number</th>
+                                <th>Telephone</th>
+                                <th>Address</th>
+                                <th>Customer Type</th>
+                                <th>Status</th>
+                            </tr>
+                            </thead>
+                            
+                            <tbody>
+                            <tr class="showDetails">
+                                <td class="not-bind-click"><a href="">1</a> <i class="fa fa-sticky-note"></i></td>
+                                <td>office Depot</td>
+                                <td>0001456</td>
+                                <td>561 699 4147</td>
+                                <td>22025 Spring Harbor Dr, Delray Beach</td>
+                                <td>Direct</td>
+                                <td>Purged</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+            </div>            
+        </script>
+    </body>
+</html>

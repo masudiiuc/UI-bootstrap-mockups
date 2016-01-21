@@ -1,0 +1,10 @@
+.table tr{
+    font-size:13px;
+}
+.table tr td{
+    padding-top: 15px!important;
+    padding-bottom: 15px!important;
+}
+code{
+    font-size: 100%;
+}
