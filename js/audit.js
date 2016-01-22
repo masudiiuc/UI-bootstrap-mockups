@@ -7,6 +7,14 @@ var Audit = (function(){
     };
     
     
+    ///////////////////////////////////////////////////////////////////////////////////////////////////
+    
+    /**
+     * Initialize the default events
+     * 
+     * @author  M.M.H.Masud<masudiiuc@gmail.com>
+     * @date    17th Jan, 2016
+     */ 
     function initialize() {
         
         $("#audit-list").find(".showDetails td").not('td[class="not-bind-click"]').on('click', function(){
@@ -19,6 +27,12 @@ var Audit = (function(){
         });
     }
     
+    /**
+     * Initialize the default events
+     * 
+     * @author  M.M.H.Masud<masudiiuc@gmail.com>
+     * @date    17th Jan, 2016
+     */ 
     function showPopover(ele) {
         
         $('.fa-sticky-note').popover('destroy')
@@ -40,10 +54,22 @@ var Audit = (function(){
         
     }
     
+    /**
+     * Initialize the default events
+     * 
+     * @author  M.M.H.Masud<masudiiuc@gmail.com>
+     * @date    17th Jan, 2016
+     */ 
     function getPopoverContent() {
         return $('#popoverContent').html();
     }
     
+    /**
+     * Initialize the default events
+     * 
+     * @author  M.M.H.Masud<masudiiuc@gmail.com>
+     * @date    17th Jan, 2016
+     */ 
     function showAuditDetails(showIt) {
         
         if (showIt) {
@@ -58,6 +84,12 @@ var Audit = (function(){
         }
     }
     
+    /**
+     * Initialize the default events
+     * 
+     * @author  M.M.H.Masud<masudiiuc@gmail.com>
+     * @date    17th Jan, 2016
+     */ 
     function bindListenersToDetails(){
         
         $("#backToAudit").on('click', function(){
